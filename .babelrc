@@ -1,0 +1,13 @@
+{
+    "presets": [
+        ["@babel/env", {
+            "modules": false,
+            "useBuiltIns": "entry",
+            "targets": "> 0.1%, not dead",
+            "corejs": 3
+        }]
+    ],
+    "plugins": [
+        "transform-class-properties"
+    ]
+}

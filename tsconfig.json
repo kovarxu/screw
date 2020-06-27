@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "lib": [
+        "es2017"
+      ],
+      "target": "ES6",
+      "baseUrl": "./src",
+      "allowJs": true,
+      "checkJs": true,
+      "jsx": "react",
+      "noImplicitAny": false,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "outDir": "js-out",
+      "types": ["./types"]
+    },
+    "exclude": [
+      "dist",
+      "node_modules"
+    ],
+    "include": [
+        "./src/**/*"
+    ]
+  }
+  

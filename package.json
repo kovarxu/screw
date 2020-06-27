@@ -1,0 +1,39 @@
+{
+  "name": "copper-screw",
+  "version": "1.0.0",
+  "description": "some useful utilities used in the work",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc && rollup -c",
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordxu/screw.git"
+  },
+  "keywords": [
+    "utility",
+    "simple"
+  ],
+  "author": "lordxu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lordxu/screw/issues"
+  },
+  "homepage": "https://github.com/lordxu/screw#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "core-js": "^3.6.5",
+    "eslint": "^7.3.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^3.9.3"
+  }
+}
