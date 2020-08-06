@@ -1,6 +1,8 @@
 import {
     linkQuery,
-    appendQuery
-} from './dist/bundle.js';
+    INode
+} from '../dist/bundle.js';
 
-console.log(linkQuery({name: 东方仗助, age: 18}))
+console.log(linkQuery({name: '张三', age: 18}));
+
+
