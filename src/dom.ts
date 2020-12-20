@@ -8,28 +8,28 @@
  * @return: void
  */
 export const injectScript = (options: {
-    src: string,
-    fromUrl: boolean,
-    remove: boolean
+  src: string,
+  fromUrl: boolean,
+  remove: boolean
 }) => {
-    const s = document.createElement('script');
-    s.type = 'text/javascript';
-    s.async = true;
+  const s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
 
-    if (options.fromUrl) {
-        s.src = options.src;
-    } else {
-        s.innerText = options.src;
-    }
-    
-    const t = document.getElementsByTagName('body')[0];
-    t.appendChild(s);
+  if (options.fromUrl) {
+      s.src = options.src;
+  } else {
+      s.innerText = options.src;
+  }
+  
+  const t = document.getElementsByTagName('body')[0];
+  t.appendChild(s);
 
-    // we just remove it as a macro task
-    // this may cause some problems in your program, be cautious
-    if (options.remove) {
-        setTimeout(() => {
-            t.removeChild(s);
-        })
-    }
+  // we just remove it as a macro task
+  // this may cause some problems in your program, be cautious
+  if (options.remove) {
+      setTimeout(() => {
+          t.removeChild(s);
+      })
+  }
 }

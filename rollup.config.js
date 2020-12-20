@@ -3,16 +3,16 @@ import babel from 'rollup-plugin-babel';
 import cjs from 'rollup-plugin-commonjs';
 
 export default {
-    input: 'js-out/index.js',
-    output: {
-        file: 'dist/bundle.js',
-        format: 'esm'
-    },
-    plugins: [ 
-        resolve(),
-        cjs(),
-        babel({
-            exclude: 'node_modules/**'
-        })
-    ]
+  input: 'js-out/index.js',
+  output: {
+    file: 'lib/bundle.js',
+    format: 'esm'
+  },
+  plugins: [ 
+    resolve(),
+    cjs(),
+    babel({
+      exclude: 'node_modules/**'
+    })
+  ]
 }

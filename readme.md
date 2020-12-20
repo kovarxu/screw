@@ -1,1 +1,1 @@
-Some useful utilities in the work.
+Useful utilities.

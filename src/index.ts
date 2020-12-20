@@ -1,3 +1,2 @@
-export * from './url'
 export * from './is'
-export * from './inode'
+export * from './dom'

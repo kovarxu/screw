@@ -1,29 +1,35 @@
 {
-    "compilerOptions": {
-      "lib": [
-        "ES6",
-        "ES5",
-        "ES2017",
-        "DOM",
-        "DOM.Iterable"
-      ],
-      "target": "ES6",
-      "baseUrl": "./src",
-      "allowJs": true,
-      "checkJs": true,
-      "jsx": "react",
-      "noImplicitAny": false,
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "outDir": "js-out",
-      "types": ["./types"]
-    },
-    "exclude": [
-      "dist",
-      "node_modules"
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es5",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "experimentalDecorators": true, 
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "es2017"
     ],
-    "include": [
-        "./src/**/*"
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {
+    },
+    "outDir": "./js-out",
+    "typeRoots": [
+      "./src/type.d.ts",
+      "./node_modules/@types"
     ]
-  }
-  
+  },
+  "exclude": [
+    "node_modules/"
+  ],
+  "include": [
+    "./src"
+  ]
+}
